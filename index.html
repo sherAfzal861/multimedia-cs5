@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>GSAP</title>
+</head>
+
+<body>
+    <h1>Sher Afzal Khan:</h1>
+    <h1>BSCSF29M007</h1>
+
+    <hr>
+    <div class="panel">
+        <img id="light" src="img/img.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, placeat.</p>
+        <div class="box"></div>
+    </div>
+    <button id="cta">SEE MAJIC </button>
+    <script src="gsap.min.js"></script>
+    <script>
+        document.getElementById('cta').addEventListener('click', function () {
+            gsap.to('.panel', 3, {
+                opacity:1, height: '100vh', ease: Circ.
+                    easeOut
+            })
+            gsap.to('#light' , 3 , {opacity: 1 , x: 4 ,delay: 3 , ease: Elastic.easeOut.config(1,0.3)})
+            gsap.to('p' , 2 , {opacity: 1,delay:2  ,ease: Bounce.easeOut})
+            gsap.to('.box' , 3 ,{opacity:1,y:0 , delay:3 , ease:Elastic.easeOut.config(1,0.3)})
+        })
+
+    </script>
+</body>
+
+</html>
